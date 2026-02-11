@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Mitto Mobility - AI-Powered Visa Landing Page",
+  "description": "An ultra-fast, modern, and minimalist landing page for a futuristic AI visa and mobility startup, featuring smooth transitions and high-performance design.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
