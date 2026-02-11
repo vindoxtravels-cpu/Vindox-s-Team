@@ -72,8 +72,8 @@ export const DESTINATIONS_BY_CATEGORY: Record<VisaCategory, string[]> = {
 };
 
 export const TRUSTED_BRANDS = [
-  'Meta', 'Netflix', 'Spotify', 'Adobe', 'IBM', 
-  'Oracle', 'Salesforce', 'LinkedIn', 'Tesla', 'Twitter'
+  'TATA', 'Reliance', 'Infosys', 'Wipro', 'HCLTech', 
+  'Zomato', 'Paytm', 'Swiggy', 'Flipkart', 'Ola', 'Mahindra'
 ];
 
 export const TRUST_FEATURES = [
