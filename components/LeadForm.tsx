@@ -2,7 +2,11 @@
 import React from 'react';
 import Logo from './Logo';
 
-const LeadForm: React.FC = () => {
+interface LeadFormProps {
+  onAuditClick: () => void;
+}
+
+const LeadForm: React.FC<LeadFormProps> = ({ onAuditClick }) => {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-16">
@@ -27,14 +31,15 @@ const LeadForm: React.FC = () => {
 
           <div className="flex flex-col gap-4 max-w-sm">
             {/* Primary Action Button */}
-            <button className="bg-[#0070E0] hover:bg-[#005bb8] text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-between transition-all duration-300 shadow-lg shadow-blue-100 group">
+            <button 
+              onClick={onAuditClick}
+              className="bg-[#0070E0] hover:bg-[#005bb8] text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-between transition-all duration-300 shadow-lg shadow-blue-100 group"
+            >
               <span>Start My Profile Audit</span>
               <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </button>
-            
-            {/* Note: WhatsApp button removed to satisfy "remove one" request */}
           </div>
         </div>
 
@@ -42,7 +47,6 @@ const LeadForm: React.FC = () => {
         <div className="flex-1 w-full max-w-md">
            <div className="bg-white rounded-[2.5rem] p-10 shadow-[0_30px_60px_-15px_rgba(30,58,138,0.1)] border border-slate-100 space-y-8 relative group hover:shadow-2xl transition-all duration-500">
               
-              {/* Added Logo into the card corner as per "add logo" request */}
               <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-all duration-500">
                 <Logo />
               </div>

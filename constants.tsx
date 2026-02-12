@@ -1,4 +1,3 @@
-
 import { VisaCategory, CategoryContent } from './types';
 
 export const CATEGORY_CONTENT: Record<VisaCategory, CategoryContent> = {
@@ -72,6 +71,7 @@ export const DESTINATIONS_BY_CATEGORY: Record<VisaCategory, string[]> = {
 };
 
 export const TRUSTED_BRANDS = [
+  'Google', 'Amazon', 'Meta', 'Stripe', 'Deel', 'Revolut', 
   'TATA', 'Reliance', 'Infosys', 'Wipro', 'HCLTech', 
   'Zomato', 'Paytm', 'Swiggy', 'Flipkart', 'Ola', 'Mahindra'
 ];
@@ -81,4 +81,15 @@ export const TRUST_FEATURES = [
   { text: 'Zero Spam', icon: '✔' },
   { text: 'End-to-End Assistance', icon: '✔' },
   { text: 'Global Network', icon: '✔' }
+];
+
+export const EXPANSION_COUNTRIES = [
+  { name: 'Germany', flag: '🇩🇪' },
+  { name: 'South Korea', flag: '🇰🇷' },
+  { name: 'Brazil', flag: '🇧🇷' },
+  { name: 'Mexico', flag: '🇲🇽' },
+  { name: 'Indonesia', flag: '🇮🇩' },
+  { name: 'Vietnam', flag: '🇻🇳' },
+  { name: 'Turkey', flag: '🇹🇷' },
+  { name: 'South Africa', flag: '🇿🇦' }
 ];
