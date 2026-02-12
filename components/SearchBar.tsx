@@ -37,7 +37,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ activeCategory }) => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-6 mb-32 relative z-10">
+    <div className="max-w-4xl mx-auto px-6 mb-32 relative z-50">
       <div className="glass-premium p-2 rounded-full shadow-2xl border border-slate-100 flex flex-col md:flex-row items-center transition-all duration-500">
         {/* Origin */}
         <div className="flex-1 w-full relative px-8 py-5 flex flex-col items-start md:border-r border-slate-100 group">
