@@ -7,9 +7,12 @@ import TrustBadges from './components/TrustBadges';
 import Marquee from './components/Marquee';
 import WorldMap from './components/WorldMap';
 import MittoDifference from './components/MittoDifference';
+import CompetitiveAdvantage from './components/CompetitiveAdvantage';
 import SuccessStories from './components/SuccessStories';
 import LeadForm from './components/LeadForm';
+import ExpansionBlock from './components/ExpansionBlock';
 import AboutUs from './components/AboutUs';
+import Footer from './components/Footer';
 import AuditModal from './components/AuditModal';
 import LoginModal from './components/LoginModal';
 import { VisaCategory } from './types';
@@ -41,10 +44,16 @@ const App: React.FC = () => {
 
         <MittoDifference />
 
+        <CompetitiveAdvantage />
+
         <SuccessStories />
+
+        <ExpansionBlock />
 
         <AboutUs />
       </main>
+
+      <Footer />
 
       <AuditModal 
         isOpen={isAuditModalOpen} 
